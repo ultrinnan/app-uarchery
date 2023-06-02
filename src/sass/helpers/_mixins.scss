@@ -1,0 +1,19 @@
+@import 'variables';
+
+@mixin filter-gray() {
+  filter: grayscale(100%);
+  transition: all 0.3s;
+  cursor: pointer;
+  &:hover {
+    filter: none;
+  }
+}
+
+@mixin hover {
+  //color: $yellow;
+  text-decoration: underline;
+}
+@mixin active {
+  //color: $yellow;
+  text-decoration: underline;
+}

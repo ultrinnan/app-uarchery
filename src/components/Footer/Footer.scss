@@ -1,0 +1,46 @@
+@import '../../sass/helpers/variables';
+@import '../../sass/helpers/mixins';
+
+footer {
+  border-top: 4px solid $yellow;
+  height: 50px;
+  width: 100%;
+  padding: 0;
+  margin-top: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $blue;
+    font-size: 18px;
+    font-weight: bold;
+    &:hover,
+    &:active {
+      text-decoration: none;
+    }
+  }
+  .central_button {
+    display: block;
+    background: white url("../../../src/img/UArchery.png") center no-repeat;
+    background-size: contain;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    top: -25px;
+  }
+}
+
+@media screen and (max-width: 1440px) { // max-width: 1440px
+}
+
+@media screen and (max-width: 1024px) { // max-width: 1024px
+}
+
+@media screen and (max-width: 768px) { // max-width: 768px
+}
+
+@media screen and (max-width: 590px) { // max-width: 590px
+}
