@@ -10,16 +10,37 @@ const Menu = (props) => (
     >
         <ul className="menu_list">
             <NavLink
-                to="/"
-                clickHandle={props.clickHandle}
-            >
-                Home
-            </NavLink>
-            <NavLink
                 to="/converter"
                 clickHandle={props.clickHandle}
             >
                 Конвертер
+            </NavLink>
+            <NavLink
+                to="/encyclopedia"
+                clickHandle={props.clickHandle}
+            >
+                Лучна енциклопедія
+            </NavLink>
+            <NavLink
+                to="https://uarchery.org"
+                target="_blank"
+                clickHandle={props.clickHandle}
+            >
+                Портал UArchery.org (сайт)
+            </NavLink>
+            <NavLink
+                to="https://uarchery.org/map"
+                target="_blank"
+                clickHandle={props.clickHandle}
+            >
+                Лучна карта України (сайт)
+            </NavLink>
+            <NavLink
+                to="https://uarchery.org/events"
+                target="_blank"
+                clickHandle={props.clickHandle}
+            >
+                Календар лучних подій (сайт)
             </NavLink>
             <NavLink
                 to="/about"
