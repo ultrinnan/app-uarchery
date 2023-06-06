@@ -127,11 +127,11 @@
           }
         }
       }
-      .menu-item {
+      li {
         a {
           padding: 16px 32px;
-          font-size: 24px;
-          color: white;
+          font-size: 20px;
+          color: $yellow;
         }
         &.current-menu-item {
           > a {

@@ -1,5 +1,7 @@
 /* eslint-disable no-restricted-globals */
 
+// version 1.1.2
+
 // This service worker can be customized!
 // See https://developers.google.com/web/tools/workbox/modules
 // for the list of available Workbox modules, or add any other
@@ -70,3 +72,14 @@ self.addEventListener('message', (event) => {
 });
 
 // Any other custom service worker logic can go here.
+
+self.addEventListener('install', function(event) {
+    // The promise that skipWaiting() returns can be safely ignored.
+    self.skipWaiting();
+});
+
+self.addEventListener('activate', function(event) {
+    // Calling claim() to force a "controllerchange" event on navigator.serviceWorker
+    self.clients.claim();
+});
+
