@@ -9,12 +9,12 @@ const Menu = (props) => (
         onClick={props.clickHandle}
     >
         <ul className="menu_list">
-            {/*<NavLink*/}
-            {/*    to="/trainings"*/}
-            {/*    clickHandle={props.clickHandle}*/}
-            {/*>*/}
-            {/*    Мої тренування*/}
-            {/*</NavLink>*/}
+            <NavLink
+                to="/trainings"
+                clickHandle={props.clickHandle}
+            >
+                Мої тренування
+            </NavLink>
             <NavLink
                 to="/converter"
                 clickHandle={props.clickHandle}
