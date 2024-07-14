@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import ListItemText from '@mui/material/ListItemText';
@@ -18,7 +18,7 @@ export default function Training() {
 
     const handleAddItem = () => {
         const newTraining = {
-            title: `Тренування ${trainings.length + 1}`,
+            title: `Training ${trainings.length + 1}`,
             date: new Date(),
             totalScore: 0,
         };
@@ -42,18 +42,38 @@ export default function Training() {
         setActiveTraining(null);
     }
 
+    useEffect(() => {
+        setTrainings([
+            {
+                title: `Training 1`,
+                date: new Date(),
+                totalScore: 0,
+            },
+            {
+                title: `Training 2`,
+                date: new Date(),
+                totalScore: 0,
+            },
+            {
+                title: `Training 3`,
+                date: new Date(),
+                totalScore: 0,
+            }
+        ])
+    }, []);
+
     return (
         <section>
             <InfoDialog
                 open={showInfo}
                 handleClose={() => handleClose()}
-                description={`Розділ "МОЇ ТРЕНУВАННЯ" дозволяє створювати будь яку кількість персональних тренувань, обирати мішень, відстань, кількість стріл та інші параметри.
-                По кожному тренуванню доступна детальна статистика, якою з часом можна буде поділитися з друзями.
-                ВАЖЛИВО: інформація про тренування нікуди не передається та не синхронізується (принаймні на даний момент). Тому дані зберігаються виключно на поточному пристої.`}
+                description={`Chapter "My trainings" allows to create any amount of personal trainings, select target, distance, arrows count, etc.
+                For every training detailed statistic is available. User can share his stats.
+                IMPORTANT: information from training is not sending anywhere and is stored only on your device (at least now)`}
             />
             <div className="container">
                 <h2>
-                    Мої тренування&nbsp;
+                    My trainings&nbsp;
                     <button
                         className="button clear_button"
                         type="button"
@@ -63,8 +83,8 @@ export default function Training() {
                     </button>
                 </h2>
                 <AlertDialog
-                    question="Видалити тренування?"
-                    hint="Всі результати цього тренування будуть видалені"
+                    question="Delete training?"
+                    hint="All resuts for this training will be deleted"
                     open={confirm}
                     handleClose={() => handleClose()}
                     handleConfirm={() => handleConfirm()}

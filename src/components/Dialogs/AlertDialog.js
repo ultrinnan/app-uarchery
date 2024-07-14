@@ -24,9 +24,11 @@ export default function AlertDialog(props) {
                 </DialogContentText>
             </DialogContent>
             <DialogActions>
-                <Button onClick={props.handleClose}>Ні</Button>
+                <Button onClick={props.handleClose}>
+                    No
+                </Button>
                 <Button onClick={props.handleConfirm} autoFocus>
-                    Так
+                    Yes
                 </Button>
             </DialogActions>
         </Dialog>

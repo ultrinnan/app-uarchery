@@ -8,17 +8,17 @@ import ConverterInputs from "./ConverterInputs";
 import './Converter.scss';
 
 export default function Converter() {
-    const [expanded, setExpanded] = React.useState(false);
+    const [expanded, setExpanded] = React.useState('false');
 
     const handleChange = (panel) => (event, isExpanded) => {
-        setExpanded(isExpanded ? panel : false);
+        setExpanded(isExpanded ? panel : 'false');
     };
 
     return (
         <section>
             <div className="container">
                 <h2>
-                    Конвертер найбільш поширених лучних величин
+                    Converter of most common archery measures
                 </h2>
                 <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
                     <AccordionSummary
@@ -30,16 +30,16 @@ export default function Converter() {
                             Inch - cm
                         </Typography>
                         <Typography sx={{ color: 'text.secondary' }}>
-                            Дюйми - Сантиметри
+                            Inch - Centimeter
                         </Typography>
                     </AccordionSummary>
                     <AccordionDetails>
                         <div>
-                            Використовується для позначення довжини лука, стріли, витягу і т.п.
+                            Used to measure bow and arrow length, etc.
                         </div>
                         <ConverterInputs
-                            labelFirst="Дюйми"
-                            labelSecond="Сантиметри"
+                            labelFirst="Inch"
+                            labelSecond="Centimeter"
                             coef={2.56}
                         />
                     </AccordionDetails>
@@ -54,16 +54,16 @@ export default function Converter() {
                             Pound - kg
                         </Typography>
                         <Typography sx={{ color: 'text.secondary' }}>
-                            Фунти - Кілограми
+                            Pound - Kilogram
                         </Typography>
                     </AccordionSummary>
                     <AccordionDetails>
                         <div>
-                            Використовується для позначення сили натягу лука
+                            Used to measure bow poundage
                         </div>
                         <ConverterInputs
-                            labelFirst="Фунти"
-                            labelSecond="Кілограми"
+                            labelFirst="Pound"
+                            labelSecond="Kilogram"
                             coef={0.453592}
                         />
                     </AccordionDetails>
@@ -78,16 +78,16 @@ export default function Converter() {
                             Grain - g
                         </Typography>
                         <Typography sx={{ color: 'text.secondary' }}>
-                            Грани - Грами
+                            Grain - Gram
                         </Typography>
                     </AccordionSummary>
                     <AccordionDetails>
                         <div>
-                            Використовується для позначення ваги наконечника, стріли, т.п.
+                            Used to measure arrow/broadhead weight, etc.
                         </div>
                         <ConverterInputs
-                            labelFirst="Грани"
-                            labelSecond="Грами"
+                            labelFirst="Grain"
+                            labelSecond="Gram"
                             coef={0.0647989}
                         />
                     </AccordionDetails>

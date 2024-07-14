@@ -33,10 +33,6 @@ function Header() {
                 active={active}
                 clickHandle={hamburgerClick}
             />
-            <div className="menu_search">
-                <div className="menu_icon search"></div>
-                <div className="menu_title">Пошук</div>
-            </div>
         </header>
     );
 }

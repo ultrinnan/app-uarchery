@@ -4,13 +4,13 @@ import {Link, NavLink} from "react-router-dom";
 
 const Footer = () => (
     <footer>
-        <NavLink to="/converter">Конвертер</NavLink>
+        <NavLink to="/converter">Converter</NavLink>
         <Link
             to="https://uarchery.org"
             target="_blank"
             className="central_button"
         />
-        <NavLink to="/about">Про додаток</NavLink>
+        <NavLink to="/about">About</NavLink>
     </footer>
 );
 

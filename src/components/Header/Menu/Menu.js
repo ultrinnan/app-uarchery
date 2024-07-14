@@ -13,19 +13,19 @@ const Menu = (props) => (
                 to="/trainings"
                 clickHandle={props.clickHandle}
             >
-                Мої тренування
+                My trainings
             </NavLink>
             <NavLink
                 to="/converter"
                 clickHandle={props.clickHandle}
             >
-                Конвертер
+                Converter
             </NavLink>
             <NavLink
                 to="/encyclopedia"
                 clickHandle={props.clickHandle}
             >
-                Лучна енциклопедія
+                Knowledge base
             </NavLink>
             {/*<NavLink*/}
             {/*    to="https://uarchery.org"*/}
@@ -39,20 +39,20 @@ const Menu = (props) => (
                 target="_blank"
                 clickHandle={props.clickHandle}
             >
-                Лучна карта України (сайт)
+                Archery map of Ukraine (external link)
             </NavLink>
             <NavLink
                 to="https://uarchery.org/events"
                 target="_blank"
                 clickHandle={props.clickHandle}
             >
-                Календар лучних подій (сайт)
+                Archery events calendar (external link)
             </NavLink>
             <NavLink
                 to="/about"
                 clickHandle={props.clickHandle}
             >
-                Про додаток
+                About
             </NavLink>
         </ul>
     </div>

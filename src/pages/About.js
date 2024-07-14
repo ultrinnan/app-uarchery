@@ -5,39 +5,35 @@ const About = () => (
     <section>
         <div className="container">
             <div className="content">
-                <h2>Про додаток</h2>
+                <h2>About this App</h2>
                 <p>
-                    Цей додаток являє собою "мультитул" сучасного лучника і розроблений спеціально для порталу <a href="https://uarchery.org"><b>UArchery.org</b></a>
+                    This app is "multi-tool" for modern archer.
                 </p>
                 <p>
-                    <b>
-                        Головна мета проекту - розвиток і популяризація всіх видів стрільби з лука в Україні
-                    </b>
-                </p>
-                <p>
-                    Поточний функціонал:
+                    Current functionality:
                 </p>
                 <ul>
-                    <li>Універсальний конвертер</li>
-                    <li>Посилання на портал</li>
-                    <li>Сторінка "Про додаток"</li>
+                    <li>Universal converter</li>
+                    <li>Link to portal</li>
+                    <li>"About" page</li>
                 </ul>
                 <p>
-                    Запланований функціонал:
+                    Planned functionality:
                 </p>
                 <ul>
-                    <li>Тренувальний лог</li>
-                    <li>Профіль лучника</li>
-                    <li>Можливість поділитися профілем</li>
-                    <li>Локальне змагання</li>
-                    <li>Глобальне змагання</li>
-                    <li>Дружні виклики (дуелі)</li>
-                    <li>Новини</li>
-                    <li>Календар</li>
-                    <li>Лучна енциклопедія</li>
+                    <li>Training log</li>
+                    <li>Archers profile</li>
+                    <li>Possibility to share the profile</li>
+                    <li>Local competition</li>
+                    <li>Global competition</li>
+                    <li>Friendly challenges (duels)</li>
+                    <li>News</li>
+                    <li>Calendar</li>
+                    <li>Archery knowledge base</li>
                 </ul>
                 <hr/>
-                Стосовно побажань по функціоналу додатку (чи іншим питанням) писати на <Link to="mailto:serhii.fedirko@gmail.com">serhii.fedirko@gmail.com</Link>
+                Regarding additional functionality (or other questions) drop me an email to <br/>
+                <Link to="mailto:serhii.fedirko@gmail.com">serhii.fedirko@gmail.com</Link>
                 <hr/>
                 <p>© 2023 <Link to="https://fedirko.pro" target="_blank">FEDIRKO.PRO</Link>. All rights reserved.</p>
             </div>

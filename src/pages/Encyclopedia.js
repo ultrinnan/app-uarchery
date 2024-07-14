@@ -4,8 +4,8 @@ import {Link} from "react-router-dom";
 const About = () => (
     <section>
         <div className="container">
-            <h2>Лучна енциклопедія</h2>
-            <h4>Основні терміни і поняття, які використовуються в стрільбі з лука (розділ в розробці)</h4>
+            <h2>Archery knowledge base</h2>
+            <h4>Common terms and abbreviations used in archery (chapter WIP)</h4>
             <br />
             <p>
                 <b>GPP ("Grains Per Pound")</b> - одна із характеристик стріли. Це єдина міра маси, яка часто використовується в стрільбі з лука, щоб описати масу стріл.

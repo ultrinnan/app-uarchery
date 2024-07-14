@@ -26,7 +26,7 @@ export default function InfoDialog(props) {
             aria-labelledby="scroll-dialog-title"
             aria-describedby="scroll-dialog-description"
         >
-            <DialogTitle id="scroll-dialog-title">ПРО РОЗДІЛ</DialogTitle>
+            <DialogTitle id="scroll-dialog-title">About chapter</DialogTitle>
             <DialogContent dividers={true}>
                 <DialogContentText
                     id="scroll-dialog-description"
@@ -39,7 +39,7 @@ export default function InfoDialog(props) {
                 </DialogContentText>
             </DialogContent>
             <DialogActions>
-                <Button onClick={props.handleClose}>Закрити</Button>
+                <Button onClick={props.handleClose}>Close</Button>
             </DialogActions>
         </Dialog>
     );
