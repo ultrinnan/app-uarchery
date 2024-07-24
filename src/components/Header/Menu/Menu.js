@@ -16,6 +16,18 @@ const Menu = (props) => (
                 My trainings
             </NavLink>
             <NavLink
+                to="/competition/patrols"
+                clickHandle={props.clickHandle}
+            >
+                Patrol card (demo)
+            </NavLink>
+            <NavLink
+                to="/competition/user"
+                clickHandle={props.clickHandle}
+            >
+                User card (demo)
+            </NavLink>
+            <NavLink
                 to="/converter"
                 clickHandle={props.clickHandle}
             >
@@ -26,27 +38,6 @@ const Menu = (props) => (
                 clickHandle={props.clickHandle}
             >
                 Knowledge base
-            </NavLink>
-            {/*<NavLink*/}
-            {/*    to="https://uarchery.org"*/}
-            {/*    target="_blank"*/}
-            {/*    clickHandle={props.clickHandle}*/}
-            {/*>*/}
-            {/*    Портал UArchery.org (сайт)*/}
-            {/*</NavLink>*/}
-            <NavLink
-                to="https://uarchery.org/map"
-                target="_blank"
-                clickHandle={props.clickHandle}
-            >
-                Archery map of Ukraine (external link)
-            </NavLink>
-            <NavLink
-                to="https://uarchery.org/events"
-                target="_blank"
-                clickHandle={props.clickHandle}
-            >
-                Archery events calendar (external link)
             </NavLink>
             <NavLink
                 to="/about"

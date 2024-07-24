@@ -120,13 +120,15 @@ export default function Training() {
                         </ListItem>
                     ))}
                 </List>
-                <button
-                    type="button"
-                    className="button add"
-                    onClick={handleAddItem}
-                >
-                    +
-                </button>
+                <div className="right_wrapper">
+                    <button
+                        type="button"
+                        className="button add"
+                        onClick={handleAddItem}
+                    >
+                        +
+                    </button>
+                </div>
             </div>
         </section>
     );
