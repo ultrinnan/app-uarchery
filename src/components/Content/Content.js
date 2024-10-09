@@ -13,6 +13,10 @@ function Content() {
         <main>
             <Routes>
                 <Route path="/" element={<Converter />} />
+
+                <Route path="/signin" element={<Converter />} />
+                <Route path="/signup" element={<Converter />} />
+
                 <Route path="/converter" element={<Converter />} />
                 <Route path="/competition" element={<Converter />} />
                 <Route path="/competition/patrols" element={<PatrolList />} />

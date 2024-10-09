@@ -95,13 +95,24 @@
     width: 100%;
     transition: all 0.3s;
     padding: 0 10% 0 0;
+    &.right {
+      left: auto;
+      right: -100%;
+      padding: 0 0 0 10%;
+      position: fixed;
+      &.active {
+        left: auto;
+        right: 0;
+        transition: all 0.3s;
+      }
+    }
     &.active {
       left: 0;
       transition: all 0.3s;
     }
     .menu_list {
       flex-direction: column;
-      background: rgba(0, 0, 0, 0.95);
+      background: rgba(0, 0, 0, 0.9);
       height: 100%;
       padding: 16px 0;
       overflow: scroll;

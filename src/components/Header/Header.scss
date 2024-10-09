@@ -3,12 +3,13 @@
 
 header {
   padding: 0;
-  height: 90px;
+  height: 60px;
   width: 100%;
   transition: all 0.3s;
   border-bottom: 3px solid $blue;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   flex-direction: row;
 
   .hamburger {
@@ -19,7 +20,7 @@ header {
     display: flex;
     align-items: center;
     width: 100%;
-    padding: 30px 24px 16px;
+    padding: 0;
     a {
       display: block;
       width: 220px;
@@ -27,6 +28,7 @@ header {
       background: url('../../../src/img/UArchery-text.svg') top left no-repeat;
       background-size: contain;
       text-decoration: none;
+      margin: auto;
     }
   }
 
@@ -135,11 +137,4 @@ header {
 }
 
 @media screen and (max-width: 590px) { // max-width: 590px
-  header {
-    .header_logo {
-      a {
-        width: 180px;
-      }
-    }
-  }
 }

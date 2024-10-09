@@ -4,7 +4,7 @@ import {Link, NavLink} from "react-router-dom";
 
 const Footer = () => (
     <footer>
-        <NavLink to="/converter">Converter</NavLink>
+        <NavLink to="/converter">v.1.0.1 &copy; FEDIRKO.PRO</NavLink>
         <Link
             to="https://uarchery.org"
             target="_blank"
