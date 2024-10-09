@@ -7,6 +7,8 @@ import Encyclopedia from "../../pages/Encyclopedia";
 import Training from "../../pages/Trainings";
 import PatrolList from "../competition/PatrolList/PatrolList";
 import UserPage from "../competition/UserPage/UserPage";
+import SignIn from "../SignIn/SignIn";
+import SignUp from "../SignUp/SignUp";
 
 function Content() {
     return (
@@ -14,8 +16,8 @@ function Content() {
             <Routes>
                 <Route path="/" element={<Converter />} />
 
-                <Route path="/signin" element={<Converter />} />
-                <Route path="/signup" element={<Converter />} />
+                <Route path="/signin" element={<SignIn />} />
+                <Route path="/signup" element={<SignUp />} />
 
                 <Route path="/converter" element={<Converter />} />
                 <Route path="/competition" element={<Converter />} />
